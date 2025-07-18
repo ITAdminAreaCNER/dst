@@ -17,6 +17,8 @@
             color: #505050; /* Body text color */
             border: 1px solid #EAE7E1;
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            height: 100%; /* Ensure all slides take full container height */
+            overflow-y: auto; /* Allow scrolling within slide if content is too tall */
         }
         .slide.active {
             display: flex;
@@ -58,14 +60,19 @@
             line-height: 1.75;
             max-width: 80%;
         }
+        /* Fixed container height */
+        #presentation-container {
+            height: 70vh; /* Fixed height instead of aspect ratio */
+            min-height: 500px; /* Minimum height for smaller screens */
+        }
     </style>
 </head>
-<body class="flex items-center justify-center min-h-screen p-2">
+<body class="p-4">
 
     <!-- Main Wrapper for Presentation and Controls -->
-    <div class="flex flex-col items-center w-full">
-        <!-- Slide Container -->
-        <div id="presentation-container" class="w-full max-w-7xl aspect-[16/9] relative">
+    <div class="w-full max-w-7xl mx-auto">
+        <!-- Slide Container with Fixed Height -->
+        <div id="presentation-container" class="w-full relative rounded-lg">
             
             <!-- Slide 1: Title -->
             <div class="slide active flex-col items-center justify-center text-center p-8 md:p-16 rounded-lg">
@@ -96,9 +103,9 @@
             </div>
 
             <!-- Slide 3: The 'Why' - Spiritual Principles -->
-            <div class="slide flex-col p-6 md:p-12 rounded-lg">
+            <div class="slide flex-col p-6 md:p-8 rounded-lg">
                 <h2 class="slide-header text-3xl md:text-4xl font-bold text-center mb-6">The 'Why': Our Spiritual Principles</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 text-sm flex-grow">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 text-sm flex-grow overflow-y-auto">
                     <!-- Traditions -->
                     <div>
                         <h3 class="slide-header font-bold text-xl mb-3">The Traditions</h3>
@@ -152,9 +159,9 @@
             </div>
 
             <!-- Slide 5: The 'How' -->
-            <div class="slide flex-col p-6 md:p-12 rounded-lg">
+            <div class="slide flex-col p-6 md:p-8 rounded-lg">
                 <h2 class="slide-header text-3xl md:text-4xl font-bold text-center mb-6">The 'How': The Digital Toolkit in Action</h2>
-                <div class="w-full space-y-4 flex-grow">
+                <div class="w-full space-y-4 flex-grow overflow-y-auto">
                     <!-- Business -->
                     <div class="bg-white p-4 rounded-lg shadow-sm">
                         <h3 class="slide-header font-bold text-lg">Running the Business of A.A.</h3>
@@ -229,7 +236,7 @@
             </div>
         </div>
 
-        <!-- Navigation -->
+        <!-- Navigation - Now directly below the fixed-height container -->
         <div class="mt-4 flex justify-center items-center space-x-4">
             <button id="prevBtn" class="accent-bg text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-opacity-90 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed">Previous</button>
             <span id="slide-counter" class="text-white">1 / 11</span>
