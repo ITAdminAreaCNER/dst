@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide: Google Sheets for Service Coordination</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .bg-primary { background-color: #F8F7F4; }
+        .text-header { color: #3D405B; }
+        .text-body { color: #505050; }
+        .accent-color { color: #81B29A; }
+        .table-header { background-color: #EAE7E1; }
+        .hero-warning {
+            background-color: #FFFBEB; /* Light yellow */
+            border: 1px solid #FBBF24; /* Amber border */
+            color: #92400E; /* Dark amber text for readability */
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin-top: 3rem; /* Space above the hero section */
+        }
+    </style>
+</head>
+<body class="bg-primary text-body">
+    <div class="container mx-auto p-6 md:p-12">
+        <header class="text-center mb-12">
+            <h1 class="text-3xl md:text-4xl font-bold text-header mb-2">Guide: Google Sheets for Service Coordination</h1>
+            <p class="text-lg">A powerful tool for tracking finances, motions, outreach, and more.</p>
+        </header>
+
+        <main>
+            <section class="mb-12">
+                 <h2 class="text-2xl font-bold text-header text-center mb-6">Why Use Google Sheets?</h2>
+                 <div class="max-w-4xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                   <div class="bg-white p-4 rounded-lg shadow-sm">
+                       <h3 class="font-bold text-lg mb-2 text-header">Centralized Data</h3>
+                       <p class="text-sm">All your information is in one shared, accessible place.</p>
+                   </div>
+                   <div class="bg-white p-4 rounded-lg shadow-sm">
+                       <h3 class="font-bold text-lg mb-2 text-header">Real-Time Updates</h3>
+                       <p class="text-sm">Multiple members can view and edit the sheet simultaneously.</p>
+                   </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                       <h3 class="font-bold text-lg mb-2 text-header">Structured Info</h3>
+                       <p class="text-sm">The grid format is perfect for organizing lists and data clearly.</p>
+                   </div>
+                   <div class="bg-white p-4 rounded-lg shadow-sm">
+                       <h3 class="font-bold text-lg mb-2 text-header">Historical Record</h3>
+                       <p class="text-sm">Creates a lasting, searchable record for future trusted servants.</p>
+                   </div>
+                 </div>
+            </section>
+
+            <!-- Hero Warning Section -->
+            <section class="max-w-5xl mx-auto">
+                <div class="hero-warning text-center">
+                    <h2 class="text-2xl font-bold mb-2">A Critical Note on Sheet & Data Ownership</h2>
+                    <p class="text-lg">To ensure the service entity retains control over its information, any Google Sheet used for service (treasury, motions, contact lists) <strong class="font-semibold">must be created inside a Shared Drive</strong>. A sheet created in a personal "My Drive" is owned by the individual. If that person leaves service, the data can be lost forever.</p>
+                </div>
+            </section>
+
+            <section class="max-w-5xl mx-auto space-y-8 mt-12">
+                <h2 class="text-2xl font-bold text-header text-center mb-6">Common Service Use Cases</h2>
+
+                <!-- Financial Tracking -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-header mb-3">1. Financial Tracking & Reporting (For Treasurers)</h3>
+                    <p class="mb-4">Provides transparency for the group and makes the service rotation for treasurers seamless. The next treasurer inherits a complete, clear financial history.</p>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm border">
+                            <thead>
+                                <tr class="table-header text-header">
+                                    <th class="p-2 border">Date</th>
+                                    <th class="p-2 border">Description</th>
+                                    <th class="p-2 border">Category</th>
+                                    <th class="p-2 border">Income</th>
+                                    <th class="p-2 border">Expense</th>
+                                    <th class="p-2 border">Balance</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="p-2 border">07/01/2025</td>
+                                    <td class="p-2 border">7th Tradition</td>
+                                    <td class="p-2 border">Contribution</td>
+                                    <td class="p-2 border text-green-600">$55.00</td>
+                                    <td class="p-2 border"></td>
+                                    <td class="p-2 border">$550.50</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-2 border">07/05/2025</td>
+                                    <td class="p-2 border">Rent for July</td>
+                                    <td class="p-2 border">Rent</td>
+                                    <td class="p-2 border"></td>
+                                    <td class="p-2 border text-red-600">$100.00</td>
+                                    <td class="p-2 border">$450.50</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Committee Coordination -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-header mb-3">2. Committee & Group Coordination</h3>
+                    <p class="mb-4">Track agenda items, motions, and action items during a business meeting. This ensures nothing is forgotten and provides a clear record of the group's conscience.</p>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm border">
+                             <thead>
+                                <tr class="table-header text-header">
+                                    <th class="p-2 border">Item</th>
+                                    <th class="p-2 border">Topic</th>
+                                    <th class="p-2 border">Motion</th>
+                                    <th class="p-2 border">Vote</th>
+                                    <th class="p-2 border">Action Item</th>
+                                    <th class="p-2 border">Responsible</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="p-2 border">3a</td>
+                                    <td class="p-2 border">PI/PA Outreach</td>
+                                    <td class="p-2 border">To purchase 20 Big Books for the library project.</td>
+                                    <td class="p-2 border">Passed</td>
+                                    <td class="p-2 border">Purchase books</td>
+                                    <td class="p-2 border">Bob S.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- PI/PA Outreach -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-header mb-3">3. PI/PA Outreach Locations</h3>
+                    <p class="mb-4">While a map is great for visuals, a sheet is perfect for detailed lists of outreach locations. It's easily sortable and can hold more detailed contact information.</p>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm border">
+                            <thead>
+                                <tr class="table-header text-header">
+                                    <th class="p-2 border">Location</th>
+                                    <th class="p-2 border">Contact Person</th>
+                                    <th class="p-2 border">Last Visit</th>
+                                    <th class="p-2 border">Notes</th>
+                                    <th class="p-2 border">Follow-Up Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="p-2 border">City Library</td>
+                                    <td class="p-2 border">Ms. Davis</td>
+                                    <td class="p-2 border">06/15/2025</td>
+                                    <td class="p-2 border">Left pamphlets. Very receptive.</td>
+                                    <td class="p-2 border">12/15/2025</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-header mb-3">4. Best Practices for Sheets</h3>
+                     <ul class="list-disc list-inside space-y-2">
+                         <li><strong>One Sheet, One Purpose:</strong> Create separate Google Sheets files for Treasury, Committee Motions, etc. Don't put everything in one file.</li>
+                         <li><strong>Use Templates:</strong> Create a blank "master" version for each task. When you need a new one, just make a copy.</li>
+                         <li><strong>Keep Formatting Consistent:</strong> Use clear headers and don't merge cells unnecessarily, as it can make sorting and filtering difficult.</li>
+                         <li><strong>Protect Important Data:</strong> For things like treasury reports, you can protect cells or entire sheets to prevent accidental changes. Right-click a sheet tab or a cell and look for "Protect range".</li>
+                     </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
