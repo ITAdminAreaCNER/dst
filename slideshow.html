@@ -47,6 +47,17 @@
             padding: 0.75rem;
             border-radius: 0.25rem;
         }
+        .qa-slide .question {
+            font-size: 1.75rem;
+            font-weight: bold;
+            color: #3D405B;
+            margin-bottom: 1.5rem;
+        }
+        .qa-slide .answer {
+            font-size: 1.125rem;
+            line-height: 1.75;
+            max-width: 80%;
+        }
     </style>
 </head>
 <body class="flex flex-col items-center justify-center min-h-screen p-4">
@@ -174,13 +185,44 @@
             </div>
         </div>
         
-        <!-- Slide 7: Q&A -->
+        <!-- Slide 7: Q&A Title -->
         <div class="slide flex-col items-center justify-center text-center p-8 md:p-16 rounded-lg">
             <div class="icon-wrapper mb-6">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
             </div>
             <h1 class="slide-header text-4xl md:text-6xl font-bold">Q & A</h1>
-            <p class="mt-4 text-xl md:text-2xl">Thank you!</p>
+            <p class="mt-4 text-xl md:text-2xl">Common Questions</p>
+        </div>
+
+        <!-- Slide 8: Q&A - Complicated -->
+        <div class="slide qa-slide flex-col items-center justify-center text-center p-8 md:p-16 rounded-lg">
+            <h2 class="question">"This sounds too complicated. I'm not good with computers."</h2>
+            <p class="answer">That's a common and valid concern. The goal is to <strong class="accent-color">start simple</strong>. We can use tools like Google Forms as an "easy button" so most members never have to touch a spreadsheet. The website has step-by-step guides, and we're here to help each other. It's about progress, not perfection.</p>
+        </div>
+
+        <!-- Slide 9: Q&A - Security -->
+        <div class="slide qa-slide flex-col items-center justify-center text-center p-8 md:p-16 rounded-lg">
+            <h2 class="question">"What about security and anonymity?"</h2>
+            <p class="answer">This is our highest priority. Shared Drives actually give us <strong class="accent-color">more control</strong> than personal accounts. We can manage exactly who sees what, in line with our Traditions. The "Spiritual Principles" page on the website goes into this in detail, but this system is designed to protect our members and our fellowship.</p>
+        </div>
+
+        <!-- Slide 10: Q&A - Why Google / Cost -->
+        <div class="slide qa-slide flex-col items-center justify-center text-center p-8 md:p-12 rounded-lg">
+            <h2 class="question">"Why Google? And does this cost money?"</h2>
+            <div class="answer text-left grid md:grid-cols-3 gap-4">
+                <div><strong class="accent-color">1. Following GSO's Lead:</strong> The General Service Office and Board use these same tools. We're aligning with the practices of A.A. as a whole.</div>
+                <div><strong class="accent-color">2. Low Cost & Self-Supporting:</strong> The Area pays for a few core accounts. Most members participate for free. This keeps us self-supporting without a large financial burden.</div>
+                <div><strong class="accent-color">3. Group Autonomy:</strong> This is a framework, not a mandate. Each group or district is free to choose the tools that best serve their own needs.</div>
+            </div>
+        </div>
+
+        <!-- Slide 11: Final Q&A -->
+        <div class="slide flex-col items-center justify-center text-center p-8 md:p-16 rounded-lg">
+            <div class="icon-wrapper mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            </div>
+            <h1 class="slide-header text-4xl md:text-6xl font-bold">Thank You</h1>
+            <p class="mt-4 text-xl md:text-2xl">Further Questions?</p>
             <p class="font-mono text-lg mt-8 accent-color break-all">https://sites.google.com/areacneraa.au/gws</p>
         </div>
 
@@ -189,7 +231,7 @@
     <!-- Navigation -->
     <div class="mt-4 flex justify-center items-center space-x-4">
         <button id="prevBtn" class="accent-bg text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-opacity-90 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed">Previous</button>
-        <span id="slide-counter" class="text-white">1 / 7</span>
+        <span id="slide-counter" class="text-white">1 / 11</span>
         <button id="nextBtn" class="accent-bg text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-opacity-90 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed">Next</button>
     </div>
 
