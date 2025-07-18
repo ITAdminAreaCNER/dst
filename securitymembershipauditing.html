@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedure: Security & Membership Auditing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .bg-primary { background-color: #F8F7F4; }
+        .text-header { color: #3D405B; }
+        .text-body { color: #505050; }
+        .procedure-card {
+            background-color: white;
+            border-left: 4px solid #81B29A;
+            padding: 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body class="bg-primary text-body">
+    <div class="container mx-auto p-6 md:p-12">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-header mb-4">Security & Membership Auditing</h1>
+            <p class="text-lg max-w-3xl mx-auto">Ensuring our digital spaces remain secure, relevant, and accountable through regular audits.</p>
+        </header>
+
+        <main class="max-w-4xl mx-auto">
+            <section>
+                <h2 class="text-3xl font-bold text-header mb-6 border-b-2 pb-2">Operating Procedure: Security & Membership Auditing</h2>
+                <p class="mb-4">Regular audits are a spiritual responsibility, ensuring our digital spaces remain secure and relevant. This responsibility is shared between local drive managers and the Area IT Administrator.</p>
+
+                <div class="procedure-card">
+                    <h3 class="text-xl font-bold text-header mb-2">Local Responsibility: Quarterly Membership Review</h3>
+                    <p>The <strong class="text-header">Manager</strong> of each Shared Drive (e.g., the DCM,Committee Chair or GSR) is responsible for reviewing their drive's member list at least once per quarter, and always after an election or service rotation. This review ensures that:</p>
+                    <ul class="list-disc list-inside space-y-2 mt-2">
+                        <li>Outgoing members have been removed.</li>
+                        <li>New members have been added with the correct permission level ("least privilege").</li>
+                        <li>The member list accurately reflects the current composition of the service body.</li>
+                    </ul>
+                </div>
+
+                <div class="procedure-card">
+                    <h3 class="text-xl font-bold text-header mb-2">Area Responsibility: Annual High-Level Audit</h3>
+                    <p>Once a year, the Area IT Administrator should conduct a high-level audit of the entire Workspace. This audit <strong class="text-red-600">does not involve looking at files or content</strong>. Its purpose is purely structural and technical:</p>
+                     <ul class="list-disc list-inside space-y-2 mt-2">
+                         <li><strong>Confirm Managers:</strong> Ensure every Shared Drive has at least one active "Manager." If a drive's manager has rotated out without assigning a new one, the IT Admin can intervene to assign a new manager based on direction from the Area, District or Group.</li>
+                         <li><strong>Identify Abandoned Drives:</strong> Look for drives that appear to have no members or have been inactive for a very long time, to be flagged for archival or deletion by the Area Committee.</li>
+                         <li><strong>Review Global Settings:</strong> Check the overall Workspace security settings to ensure no overly permissive sharing policies have been enabled.</li>
+                         <li><strong>Report to Area:</strong> The IT Administrator should provide a simple report to the Area Committee summarizing these technical findings, ensuring transparency and accountability for their role.</li>
+                     </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
