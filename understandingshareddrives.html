@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Shared Drives for AA Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .bg-primary { background-color: #F8F7F4; }
+        .bg-secondary { background-color: #EAE7E1; }
+        .text-header { color: #3D405B; }
+        .text-body { color: #505050; }
+        .accent-color { color: #81B29A; }
+        .accent-border { border-color: #81B29A; }
+        .prose h3 {
+            margin-top: 2em;
+            margin-bottom: 1em;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #3D405B;
+        }
+        .prose p, .prose li {
+            color: #505050;
+        }
+        .prose ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+        .icon-bg {
+            background-color: #EAE7E1; /* bg-secondary */
+        }
+        .icon-text {
+            color: #3D405B; /* text-header */
+        }
+    </style>
+</head>
+<body class="bg-primary text-body">
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="bg-white shadow-sm rounded-lg p-8">
+
+            <!-- Header Section -->
+            <div class="text-center border-b border-gray-200 pb-8 mb-8">
+                <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full icon-bg mb-4">
+                    <svg class="h-8 w-8 icon-text" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                    </svg>
+                </div>
+                <h1 class="text-3xl font-bold tracking-tight text-header sm:text-4xl">Understanding Shared Drives for Service</h1>
+                <p class="mt-4 text-lg text-body">A central hub for your service body's files and collaborative work.</p>
+            </div>
+
+            <!-- Main Content -->
+            <div class="prose prose-lg max-w-none">
+                
+                <!-- What is a Shared Drive? -->
+                <h3>What is a Shared Drive?</h3>
+                <p>
+                    Unlike your personal "My Drive," where you own the files, files in a Shared Drive belong to the <strong>service body as a whole</strong>. This means that if a trusted servant rotates out of a position, the files remain in the Shared Drive for the next person. It provides a stable, centralized, and secure location for all service-related documents and resources.
+                </p>
+
+                <!-- Key Functions -->
+                <h3>Key Functions in Service</h3>
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
+                    <!-- Group Ownership -->
+                    <div class="relative flex items-start">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md icon-bg icon-text">
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m-7.5-2.962A3.375 3.375 0 0 1 15 12a3.375 3.375 0 0 1 2.25 5.751v5.455a3 3 0 0 1-3 3h-3a3 3 0 0 1-3-3v-5.455A3.375 3.375 0 0 1 9 12a3.375 3.375 0 0 1 2.25-3.248Z" /></svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-semibold leading-6 text-header">Group Ownership</h4>
+                            <p class="mt-2 text-base text-body">Files are owned by the service body, preventing data loss when trusted servants rotate.</p>
+                        </div>
+                    </div>
+                    <!-- Granular Permissions -->
+                    <div class="relative flex items-start">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md icon-bg icon-text">
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 0 1 3 3m3 0a6 6 0 0 1-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1 1 21.75 8.25Z" /></svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-semibold leading-6 text-header">Managed Access</h4>
+                            <p class="mt-2 text-base text-body">Control who can view, comment, or edit files based on their service role.</p>
+                        </div>
+                    </div>
+                    <!-- Centralized Access -->
+                    <div class="relative flex items-start">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md icon-bg icon-text">
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" /></svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-semibold leading-6 text-header">Centralized Information</h4>
+                            <p class="mt-2 text-base text-body">All members can find service files in one place, creating an informed group conscience.</p>
+                        </div>
+                    </div>
+                    <!-- Enhanced Security -->
+                    <div class="relative flex items-start">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md icon-bg icon-text">
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.286Zm-1.125 4.125a9.003 9.003 0 0 0-1.125-1.125" /></svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-semibold leading-6 text-header">Protecting Anonymity</h4>
+                            <p class="mt-2 text-base text-body">Administrators can control sharing to protect sensitive information and member anonymity.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- What Can It Contain? -->
+                <h3>What Can It Contain?</h3>
+                <p>
+                    A Shared Drive is a versatile storage space that can hold a wide variety of file types for service work. This includes native Google Workspace applications and much more.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
+                    <!-- Google Components -->
+                    <div>
+                        <h4 class="text-lg font-semibold text-header mb-3">Google Workspace Files</h4>
+                        <ul class="mt-2 space-y-1">
+                            <li><strong>Google Docs:</strong> For agendas, minutes, reports, and flyers.</li>
+                            <li><strong>Google Sheets:</strong> For budgets, outreach lists, and motions trackers.</li>
+                            <li><strong>Google Slides:</strong> For orientations and workshop presentations.</li>
+                            <li><strong>Google Forms:</strong> For surveys, event sign-ups, and collecting information.</li>
+                            <li><strong>Google Sites:</strong> For creating simple websites for a committee or district.</li>
+                            <li><strong>Google Vids:</strong> For creating informational videos.</li>
+                        </ul>
+                    </div>
+                    <!-- Other File Types -->
+                    <div>
+                        <h4 class="text-lg font-semibold text-header mb-3">Other Service-Related Files</h4>
+                        <ul class="mt-2 space-y-1">
+                            <li><strong>Images:</strong> Photos from service events or for public information.</li>
+                            <li><strong>Videos:</strong> Recordings of workshops or presentations (with consent).</li>
+                            <li><strong>Audio Files:</strong> MP3s of service-related talks or workshops.</li>
+                            <li><strong>Documents:</strong> PDFs, Microsoft Office files (Word, Excel, PowerPoint).</li>
+                            <li><strong>And more:</strong> Archives (.zip) of past service records.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Access From Any Device -->
+                <h3>Access From Any Device</h3>
+                <p>
+                    You can access your service files from virtually any device, ensuring the information you need is always within reach.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
+                    <div>
+                        <div class="flex items-center mb-3">
+                            <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md icon-bg icon-text">
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" /></svg>
+                            </div>
+                            <h4 class="ml-3 text-lg font-semibold text-header">Desktop (Windows & macOS)</h4>
+                        </div>
+                        <p class="text-body">
+                            By installing <strong>Google Drive for desktop</strong>, you can access Shared Drive files directly from your computer's file system, just like any local file.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex items-center mb-3">
+                             <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md icon-bg icon-text">
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" /></svg>
+                            </div>
+                            <h4 class="ml-3 text-lg font-semibold text-header">Mobile (Android & iOS)</h4>
+                        </div>
+                        <p class="text-body">
+                            The <strong>Google Drive app</strong> gives you full access to your Shared Drives on your phone or tablet, so you can stay productive in service from anywhere.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Public Link Sharing -->
+                <h3>Sharing Files with a Link</h3>
+                <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md icon-bg icon-text">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" /></svg>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <p class="!mt-0">
+                            For non-sensitive documents intended for the public (like an event flyer), you can generate a shareable link. You can set the permission to "Anyone with the link," which allows anyone to access the file without a Google account.
+                        </p>
+                        <p>
+                            It's crucial to set the access level appropriately. For read-only access, <strong>Viewer</strong> is ideal. If you want to gather public feedback, you can use the <strong>Commenter</strong> role.
+                        </p>
+                        <p class="mt-4 text-sm italic text-gray-500">
+                            <strong>Note:</strong> Your ability to share files and the specific options available are dependent on the security permissions granted by your service body's administrator and your role within the Shared Drive.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Carrying the Message -->
+                <h3>Carrying the Message More Effectively</h3>
+                <div class="mt-8 bg-white p-6 rounded-lg shadow-sm border-t-4 accent-border">
+                    <p class="!mt-0">
+                        We encourage trusted servants to consider how these tools can improve their service. Could a shared budget in Google Sheets provide more transparency for your committee? Could a shared folder of PI flyers help your district coordinate outreach? By embracing these tools, we can reduce friction, improve collaboration, and better focus on our primary purpose.
+                    </p>
+                </div>
+
+
+                <!-- Key Takeaway Section -->
+                <div class="mt-12 pt-8 border-t border-gray-200">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md icon-bg icon-text">
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                             <h3 class="text-xl font-semibold text-header !mt-0">Key Takeaway</h3>
+                            <p class="mt-2 text-body">
+                                A Shared Drive is an essential tool for service, providing a secure, permanent, and organized home for a service body's files. It simplifies rotation, ensures continuity, and offers seamless access across all your devices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
