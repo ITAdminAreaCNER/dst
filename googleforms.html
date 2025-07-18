@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide: Google Forms for Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .bg-primary { background-color: #F8F7F4; }
+        .text-header { color: #3D405B; }
+        .text-body { color: #505050; }
+        .accent-color { color: #81B29A; }
+        .hero-warning {
+            background-color: #FFFBEB; /* Light yellow */
+            border: 1px solid #FBBF24; /* Amber border */
+            color: #92400E; /* Dark amber text for readability */
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin-top: 3rem; /* Space above the hero section */
+        }
+    </style>
+</head>
+<body class="bg-primary text-body">
+    <div class="container mx-auto p-6 md:p-12">
+        <header class="text-center mb-12">
+            <h1 class="text-3xl md:text-4xl font-bold text-header mb-2">Guide: Google Forms for Service</h1>
+            <p class="text-lg">For surveys, event sign-ups, and collecting information easily.</p>
+        </header>
+
+        <main>
+            <section class="mb-12">
+                 <h2 class="text-2xl font-bold text-header text-center mb-6">Why Use Google Forms?</h2>
+                 <div class="max-w-4xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                   <div class="bg-white p-4 rounded-lg shadow-sm">
+                       <h3 class="font-bold text-lg mb-2 text-header">Easy Data Collection</h3>
+                       <p class="text-sm">Create simple forms to gather information in a structured format.</p>
+                   </div>
+                   <div class="bg-white p-4 rounded-lg shadow-sm">
+                       <h3 class="font-bold text-lg mb-2 text-header">Protects Anonymity</h3>
+                       <p class="text-sm">Forms can be set to not collect email addresses, respecting our traditions.</p>
+                   </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                       <h3 class="font-bold text-lg mb-2 text-header">Automatic Summaries</h3>
+                       <p class="text-sm">Instantly see responses summarized with charts and graphs.</p>
+                   </div>
+                   <div class="bg-white p-4 rounded-lg shadow-sm">
+                       <h3 class="font-bold text-lg mb-2 text-header">Links to Sheets</h3>
+                       <p class="text-sm">Automatically send all responses to a Google Sheet for easy tracking.</p>
+                   </div>
+                 </div>
+            </section>
+
+            <!-- Hero Warning Section -->
+            <section class="max-w-4xl mx-auto">
+                <div class="hero-warning text-center">
+                    <h2 class="text-2xl font-bold mb-2">A Critical Note on Form & Data Ownership</h2>
+                    <p class="text-lg">To ensure the service entity retains control over its information, the Google Form and the Google Sheet it sends responses to <strong class="font-semibold">must be created inside a Shared Drive</strong>. If created in a personal drive, the data belongs to the individual, and can be lost when that person rotates out of their position.</p>
+                </div>
+            </section>
+            
+            <section class="max-w-4xl mx-auto space-y-8 mt-12">
+                <h2 class="text-2xl font-bold text-header text-center mb-6">Common Service Use Cases</h2>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-header mb-3">1. Surveys & Information Gathering</h3>
+                    <p class="mb-4">Use a form to collect information from groups or members, such as updating meeting details, gathering GSR reports before an assembly, or surveying the fellowship on a specific topic.</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li><strong>Example:</strong> A District could send a form to all its GSRs asking for updated meeting times, addresses, and whether the meeting is open or closed.</li>
+                        <li><strong>Benefit:</strong> All the information is collected in one place (a Google Sheet) instead of across dozens of separate emails.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-header mb-3">2. Event Registration & RSVPs</h3>
+                    <p class="mb-4">Easily manage sign-ups for service workshops, area events, or committee functions. You can ask for a first name and last initial, what group they're from, and if they need any materials.</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li><strong>Example:</strong> An Events Committee can create a form to handle registrations for a local convention or roundup.</li>
+                        <li><strong>Benefit:</strong> Provides an accurate headcount and a simple way to organize volunteer sign-ups for the event.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-header mb-3">3. "Contact Us" & Help Forms</h3>
+                    <p class="mb-4">A form on an Area or District website can guide newcomers or members of the public to the right person. Questions can help route the inquiry automatically.</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li><strong>Example:</strong> A question like "What is your inquiry about?" could have options like "Finding a Meeting," "Speaking to an Alcoholic," or "Public Information."</li>
+                        <li><strong>Benefit:</strong> The form can be set to notify the correct trusted servant (e.g., the Helpline chair or PI/PA chair) based on the response, ensuring a quick and appropriate reply.</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-header mb-3">4. Best Practices for Google Forms</h3>
+                     <ul class="list-disc list-inside space-y-2">
+                         <li><strong>Create it in a Shared Drive:</strong> Always start by navigating to your committee's Shared Drive and clicking `+ New > Google Forms`. This ensures the group owns the form and its data.</li>
+                         <li><strong>Check Your Settings:</strong> In the "Settings" tab of your form, make sure to **uncheck** "Collect email addresses" to protect anonymity where needed.</li>
+                         <li><strong>Link to a Sheet:</strong> In the "Responses" tab, click the Google Sheets icon to create a new spreadsheet where all responses will be automatically logged. Ensure this sheet is also saved in the Shared Drive.</li>
+                         <li><strong>Keep it Short & Simple:</strong> Only ask for the information you absolutely need. The shorter the form, the more likely people are to complete it.</li>
+                     </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
